@@ -1,0 +1,72 @@
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * General page setup
+ */
+#dt_example {
+	font: 80%/1.45em "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+	color: #333;
+	background-color: #fff;
+}
+
+#dt_example #container {
+	width: 800px;
+	margin: 30px auto;
+	padding: 0;
+}
+
+#dt_example .big {
+	font-size: 1.3em;
+	font-weight: bold;
+	line-height: 1.6em;
+	color: #4E6CA3;
+}
+
+#dt_example .clear {
+	clear: both;
+}
+
+#dt_example h1 {
+	margin: 0em;
+	font-size: 5em;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	font-weight: 500;
+	line-height: 1.6em;
+	color: #FFFFFF;
+	border-bottom: 0px solid #B0BED9;
+	clear: both;
+}
+
+#dt_example h2 {
+	margin: 0em;
+	font-size: 2em;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	font-weight: 300;
+	line-height: 1.6em;
+	color: #000000;
+	border-bottom: 0px solid #B0BED9;
+	clear: both;
+}
+
+#bottom_page1
+{
+  position:absolute;
+  bottom:2px;
+}
+
+#dt_example a:hover {
+	text-decoration: underline;
+}
+
+#dt_example ul {
+	color: #4E6CA3;
+}
+
+.css_right {
+	float: right;
+}
+
+.css_left {
+	float: left;
+}
