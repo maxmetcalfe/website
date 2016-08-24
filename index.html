@@ -12,31 +12,9 @@
     <script src=”website/js/bootstrap.js”></script>
     <style>
 	body {
-		padding-top: 10%;
+		padding-top: 5%;
 		background: transparent;
 		font-size: 16px;
-	}
-	html {
-			background: #FFFFFF;
-			-webkit-background-size: cover;
-			-moz-background-size: cover;
-			-o-background-size: cover;
-			background-size: cover;
-		}
-
-	/* Override B3 .panel adding a subtly transparent background */
-	.panel {
-		padding-top: 20px;
-		background-color: rgba(255, 255, 255, 0.9);
-	}
-	
-	.navbar {
-    background: rgba(0,0,0,0.5);
-    border: 0px solid transparent;
-  	}
-  	
-	.margin-base-vertical {
-		margin: 40px 0;
 	}
 	</style>
   <style type="text/css">
@@ -45,16 +23,30 @@
         font-size: 32px;
         font-weight: bold;
         text-align: center;
-        background: #dbdfe5;
     }
+  .top-buffer { margin-top:20px; }
+
+.block-red { background: #ff6666; }
+.block-green { background: #66ffb3; }
+.block-blue { background: #66a3ff; }
+.block-purple { background: #cc99ff; }
+.block-orange { background: #ffcc80; }
+.block-yellow { background: #ffff80; }
+.block-purple { background: #cc99ff; }
+
   </style>
   </head>
 <body>
     <div class="container">
-        <div class="row">
-            <div class="col-md-4"><p><a href="https://www.strava.com/athletes/1709376"><i class="fa fa-map fa-5x" style="color:black"></i></a></p></div>
-            <div class="col-md-4"><p><a href="https://www.instagram.com/maxmetcalfe/"><i class="fa fa-instagram fa-5x" style="color:black"></i></a></p></div>
-            <div class="col-md-4"><p><a href="https://www.facebook.com/metcalfe.max"><i class="fa fa-facebook-square fa-5x" style="color:black"></i></p></div>
+        <div class="row top-buffer">
+            <div class="col-md-4 block-red"><p><a href="https://www.strava.com/athletes/1709376"><i class="fa fa-map fa-5x" style="color:black"></i></a></p></div>
+            <div class="col-md-4 block-green"><p><a href="https://www.instagram.com/maxmetcalfe/"><i class="fa fa-instagram fa-5x" style="color:black"></i></a></p></div>
+            <div class="col-md-4 block-blue"><p><a href="https://www.facebook.com/metcalfe.max"><i class="fa fa-facebook-square fa-5x" style="color:black"></i></p></div>
+        </div>
+        <div class="row top-buffer">
+            <div class="col-md-4 block-purple"><p><a href="https://www.linkedin.com/in/max-metcalfe-3b44bb14"><i class="fa fa-linkedin-square fa-5x" style="color:black"></i></a></p></div>
+            <div class="col-md-4 block-orange"><p><a href="https://github.com/maxmetcalfe"><i class="fa fa-github-square fa-5x" style="color:black"></i></a></p></div>
+            <div class="col-md-4 block-yellow"><p><a href="mailto:m.maxmetcalfe@gmail.com"><i class="fa fa-envelope fa-5x" style="color:black"></i></a></p></div>
         </div>
     </div>
 </body>
