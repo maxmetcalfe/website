@@ -1,0 +1,15 @@
+body {
+    font-family: "Crimson Text";
+
+    background-color: rgb(10, 10, 10);
+    color: rgb(210, 210, 210);
+
+    padding: 5%;
+    font-size: 1.3em;
+}
+
+a, a:visited {
+    color: rgb(251, 243, 136);
+
+    text-decoration: none;
+}
