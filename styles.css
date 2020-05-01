@@ -1,11 +1,21 @@
 body {
+    opacity: 0;
     font-family: "Crimson Text";
 
     background-color: rgb(10, 10, 10);
-    color: rgb(210, 210, 210);
+    color: white;
 
     padding: 5%;
     font-size: 1.3em;
+}
+
+body.loaded {
+  opacity: 1.0;
+  -webkit-transition: opacity .3s ease-in-out;
+  -moz-transition: opacity .3s ease-in-out;
+  -ms-transition: opacity .3s ease-in-out;
+  -o-transition: opacity .3s ease-in-out;
+  transition: opacity .3s ease-in-out;
 }
 
 a, a:visited {
