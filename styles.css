@@ -11,8 +11,10 @@ body {
     padding: 5%;
     margin: 0;
     font-size: 1em;
+}
 
-    cursor: crosshair; // why not?
+p {
+    max-width: 600px;
 }
 
 a, a:visited {
