@@ -11,8 +11,9 @@ xhr.onload = function() {
 
   try {
     var commit = JSON.parse(xhr.response)[0];
-    var p = document.createElement("p");
-    p.innerText = "Last updated - " + new Date(commit.commit.author.date);
-    document.body.appendChild(p);
+    var p = document.getElementById("updated");
+    if (p) {
+        p.innerText = p.innerText + " " + new Date(commit.commit.author.date);
+    }
   } catch(e) {}
 };
