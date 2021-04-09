@@ -7,6 +7,7 @@
         <meta name="description" content="Max Metcalfe's Website">
         <link rel="stylesheet" href="styles.css">
         <link rel="apple-touch-icon" href="./images/logo.png">
+        <script src="https://simple-kudos.vercel.app/simple-kudos.js"></script>
     <body data-file="index.html">
         <p>Hello, my name is <b>Max!</b> Welcome to my website.</p>
         <p>I'm currently building stuff at <a href="https://workingteam.studio">The Working Team</a> with my sister <a href="https://www.linkedin.com/in/julia-metcalfe/">@julia</a>. If you would like to hear more, <a href="mailto:hello@workingteam.studio?subject=wassssssupppppp">email us</a>.</p>
@@ -21,7 +22,15 @@
             <li><a href="./resume.html">Resume</a></li>
         </ul>
         <p>The best way to get in touch is to send me an <a href="mailto:hello@maxmetcalfe.com?subject=Hey Max!">email</a>!</p>
+        <p>High five, anyone? <a id="high-five"></a></p>
         <p id="updated">Last updated - </p>
     </body>
+    <script>
+      let kudos = new SimpleKudos({
+        emoji: "🙌🏼",
+        id: "1a2b3c4d",
+        elementId: "high-five"
+      });
+    </script>
     <script defer src="updated.js"></script>
 </html>
