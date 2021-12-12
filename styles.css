@@ -15,6 +15,14 @@ body {
   margin-bottom: 5%;
 }
 
+img {
+  width: 7em;
+  height: 7em;
+  border-radius: 50%;
+  border: 2px solid rgb(0, 76, 228);
+  background-color: rgb(0, 76, 228);
+}
+
 p {
   max-width: 600px;
 }
@@ -43,6 +51,11 @@ body.loaded {
   body {
     background-color: rgb(10, 10, 10);
     color: white;
+  }
+
+  img {
+    border: 2px solid rgb(251, 243, 136);
+    background-color: rgb(251, 243, 136);
   }
 
   a,
