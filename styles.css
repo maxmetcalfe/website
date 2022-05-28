@@ -1,26 +1,45 @@
 html {
-  background-color: rgb(0, 76, 228);
+  background-color: rgb(251, 243, 136);
 }
 
 body {
   font-family: "Iowan Old Style", "Iowan", "Charter", serif;
 
-  background-color: rgb(245, 245, 245);
-  color: black;
+  background-color: rgb(6, 9, 39);
+  color: rgb(255, 255, 255);
 
-  padding: 5%;
+  padding: 7%;
   margin: 0;
-  font-size: 1.2em;
+  font-size: 18px;
 
   margin-bottom: 5%;
+  
+  cursor: default;
+}
+
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+li {
+  padding: 5px;
+}
+
+
+ul li::before {
+  content: "\2022";
+  color: rgb(251, 243, 136);
+  display: inline-block;
+  width: 1em;
 }
 
 img {
-  width: 7em;
-  height: 7em;
+  width: 5em;
+  height: 5em;
   border-radius: 50%;
-  border: 2px solid rgb(0, 76, 228);
-  background-color: rgb(0, 76, 228);
+  border: 2px solid rgb(251, 243, 136);
+  background-color: rgb(251, 243, 136);
 }
 
 p {
@@ -29,39 +48,7 @@ p {
 
 a,
 a:visited {
-  color: rgb(0, 76, 228);
+  color: rgb(251, 243, 136);
 
   text-decoration: none;
-}
-
-body.loaded {
-  opacity: 1;
-  -webkit-transition: opacity 0.3s ease-in-out;
-  -moz-transition: opacity 0.3s ease-in-out;
-  -ms-transition: opacity 0.3s ease-in-out;
-  -o-transition: opacity 0.3s ease-in-out;
-  transition: opacity 0.3s ease-in-out;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    background-color: rgb(251, 243, 136);
-  }
-
-  body {
-    background-color: rgb(10, 10, 10);
-    color: white;
-  }
-
-  img {
-    border: 2px solid rgb(251, 243, 136);
-    background-color: rgb(251, 243, 136);
-  }
-
-  a,
-  a:visited {
-    color: rgb(251, 243, 136);
-
-    text-decoration: none;
-  }
 }
