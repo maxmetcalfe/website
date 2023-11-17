@@ -1,54 +1,69 @@
 html {
-  background-color: rgb(251, 243, 136);
+  background-color: #e0c9dd;
 }
 
 body {
-  font-family: "Iowan Old Style", "Iowan", "Charter", serif;
-
-  background-color: rgb(6, 9, 39);
+  background-color: black;
   color: rgb(255, 255, 255);
 
   padding: 7%;
   margin: 0;
-  font-size: 18px;
+  font-size: 1.2em;
 
-  margin-bottom: 5%;
-  
   cursor: default;
 }
 
-ul {
-  padding-left: 0;
-  list-style: none;
+.image-container {
+  position: relative;
+  left: 0;
+  width: 150px;
+  height: 150px;
 }
 
-li {
-  padding: 5px;
+.grid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: grid;
+  height: 100%;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr); /* Adjust the number of rows as needed */
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  cursor: pointer;
 }
 
+.grid-item {
+  background-color: black;
+  display: flex;
+  opacity: 1;
+  width: 15px;
+  height: 15px;
+  justify-content: center;
+  align-items: center;
+}
 
-ul li::before {
-  content: "\2022";
-  color: rgb(251, 243, 136);
-  display: inline-block;
-  width: 1em;
+#grid.show > .grid-item {
+  opacity: 0;
 }
 
 img {
-  width: 5em;
-  height: 5em;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  margin-bottom: 20px;
   border-radius: 50%;
-  border: 2px solid rgb(251, 243, 136);
   background-color: rgb(251, 243, 136);
 }
 
-p {
-  max-width: 600px;
+a:hover,
+a:visited:hover {
+  color: #e7aa53;
 }
 
 a,
 a:visited {
-  color: rgb(251, 243, 136);
-
-  text-decoration: none;
+  color: #ec5d56;
 }

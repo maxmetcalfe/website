@@ -1,14 +1,11 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <title>Max Metcalfe</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Max Metcalfe's Website" />
-    <meta
-      name="theme-color"
-      content="#060927"
-    />
+    <meta name="theme-color" content="#060927" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="apple-touch-icon" href="./images/logo.png" />
     <script src="https://simple-kudos.vercel.app/simple-kudos.js"></script>
@@ -18,42 +15,33 @@
     ></script>
   </head>
   <body data-file="index.html">
-    <img src="images/max.png" />
+    <div>
+      <div class="image-container">
+        <img src="images/max.jpeg" />
+        <div id="grid" class="grid"></div>
+      </div>
+    </div>
     <p>Hello, my name is <b>Max!</b> Welcome to my website.</p>
-    <ul>
-      <li>
-          You will likely find me running around Miami, FL 😎 🏝
-      </li>
-      <li>
-          I'm building software at <a href="https://fairsquaremedicare.com">Fair Square Medicare</a> to fix senior healthcare.
-      </li>
-      <li>
-          I also build stuff at <a href="https://workingteam.studio">The Working Team</a> with my sister
-          <a href="https://www.linkedin.com/in/julia-metcalfe/">@julia</a> (check out the <a href="https://www.townhallmap.com">Town Hall Map</a>!)
-      </li>
-      <li>
-         Here's a link to my resume and other sites I use:
-         <a href="./resume.html">Resume</a>,
-         <a href="https://www.facebook.com/metcalfe.max">Facebook</a>,
-         <a href="https://www.instagram.com/maxmetcalfe/">Instagram</a>,
-         <a href="https://www.strava.com/athletes/1709376">Stravá</a>,
-         <a href="https://www.linkedin.com/in/max-metcalfe/">LinkedIn</a>,
-         <a href="https://github.com/maxmetcalfe">Github</a>,
-         <a href="https://www.polywork.com/madmax">Polywork.</a>
-      </li>
-      <li>
-        Here's a <a href="./images/manhole.jpg">collage</a> of manhole covers in Brazil I made in 2012.
-      </li>
-      <li>
-         If you're in San Francisco on any Wednesday afternoon, go check out the <a href="https://www.fogcityrun.com">Fog City Run</a> - an epic weekly pub run I started with <a href="https://www.linkedin.com/in/julia-metcalfe/">@julia.</a>
-      </li>
-      <li>
-         If you want to get in touch, send me an <a href="mailto:hello@maxmetcalfe.com?subject=Hey Max!">email</a>.
-      </li>
-      <li>
-         and lastly...high five, anyone? <a id="high-five"></a>
-      </li>
-    </ul>
+    <div>
+      Projects:
+      <a href="https://fairsquaremedicare.com">Fair Square Medicare</a>,
+      <a href="https://workingteam.studio">The Working Team</a>,<a
+        href="https://www.townhallmap.com"
+        >Town Hall Map</a
+      >, <a href="https://www.fogcityrun.com">Fog City Run</a>,
+      <a href="./images/manhole.jpg">brazil manhole collage</a>
+    </div>
+    <div>
+      Links: <a href="./resume.html">Resume</a>,
+      <a href="https://www.facebook.com/metcalfe.max">Facebook</a>,
+      <a href="https://www.instagram.com/maxmetcalfe/">Instagram</a>,
+      <a href="https://www.strava.com/athletes/1709376">Stravá</a>,
+      <a href="https://www.linkedin.com/in/max-metcalfe/">LinkedIn</a>,
+      <a href="https://github.com/maxmetcalfe">Github</a>,
+      <a href="https://www.polywork.com/madmax">Polywork.</a>
+      <a href="mailto:swift.joy1689@fastmail.com?subject=Hey Max!">email</a>
+    </div>
+    and lastly...high five, anyone? <a id="high-five"></a>
     <p id="updated">:::</p>
   </body>
   <script>
@@ -61,6 +49,24 @@
       emoji: "🙌🏼",
       id: "1a2b3c4d",
       elementId: "high-five",
+    });
+
+    const container = document.getElementById("grid");
+    let i = 1;
+    while (i <= 100) {
+      const item = document.createElement("div");
+      item.className = "grid-item";
+      item.style.transition = "opacity " + Math.floor(Math.random() * 3) + "s";
+      container.appendChild(item);
+      i++;
+    }
+
+    setTimeout(() => {
+      container.classList.add("show");
+    });
+
+    container.addEventListener("click", () => {
+      container.classList.toggle("show");
     });
   </script>
   <script defer src="updated.js"></script>
